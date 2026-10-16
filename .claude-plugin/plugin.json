@@ -1,0 +1,74 @@
+{
+  "name": "pulse-saas",
+  "version": "0.2.0",
+  "description": "Pulse+ : l'entonnoir des branches vers la prod (PR, checks, déploiements) dessiné en SVG. Commande /pulse3. Les noms de branches et de workflows se règlent dans les options.",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "integrationBranch": {
+      "type": "string",
+      "title": "Branche d'intégration",
+      "description": "Là où le travail se fusionne en premier.",
+      "default": "develop"
+    },
+    "stagingBranch": {
+      "type": "string",
+      "title": "Branche de préproduction",
+      "description": "Une branche absente du dépôt masque l'étape correspondante.",
+      "default": "staging"
+    },
+    "productionBranch": {
+      "type": "string",
+      "title": "Branche de production",
+      "description": "La dernière étape de l'entonnoir.",
+      "default": "master"
+    },
+    "stagingWorkflow": {
+      "type": "string",
+      "title": "Workflow de déploiement staging",
+      "description": "Fichier GitHub Actions (ex. deploy-staging.yml). Vide : pas de déploiements affichés.",
+      "default": "deploy-staging.yml"
+    },
+    "productionWorkflow": {
+      "type": "string",
+      "title": "Workflow de déploiement prod",
+      "description": "Fichier GitHub Actions. Vide : pas de déploiements affichés.",
+      "default": "deploy-master.yml"
+    },
+    "stagingName": {
+      "type": "string",
+      "title": "Nom de l'environnement staging",
+      "description": "Affiché dans « Déploiements · … ».",
+      "default": "staging"
+    },
+    "productionName": {
+      "type": "string",
+      "title": "Nom de l'environnement prod",
+      "description": "Affiché dans « Déploiements · … ».",
+      "default": "production"
+    },
+    "protectedBranches": {
+      "type": "string",
+      "title": "Branches jamais poussées",
+      "description": "Liste séparée par des virgules : elles n'avancent que par PR.",
+      "default": "master,main,staging,preprod"
+    },
+    "ignoreJobs": {
+      "type": "string",
+      "title": "Jobs de déploiement ignorés",
+      "description": "Liste séparée par des virgules : jobs du workflow qui ne sont pas un déploiement.",
+      "default": "changes,notify-skip"
+    },
+    "prePushHook": {
+      "type": "string",
+      "title": "Hook pre-push",
+      "description": "Chemin du hook rejoué avant un push depuis le volet. Vide : aucun.",
+      "default": ".husky/pre-push"
+    },
+    "runbook": {
+      "type": "string",
+      "title": "Runbook de promotion",
+      "description": "Chemin relatif au dépôt, ouvert par le bouton Runbook. Vide : pas de bouton.",
+      "default": "docs/prod-promotion-runbook.md"
+    }
+  }
+}
