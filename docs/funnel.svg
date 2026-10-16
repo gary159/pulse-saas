@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="82" viewBox="0 0 560 82"><rect width="560" height="82" rx="14" fill="var(--bg)"/><svg x="16" y="16" xmlns="http://www.w3.org/2000/svg" width="528" height="50" viewBox="0 0 528 50"><style>
+:root{--bg:#262624;--page:#1f1e1d;--line:#3d3c38;--fg:#faf9f5;--dim:#a9a79e;--off:#3d3c38;--cyan:#4fc3d9;--blue:#7d93ff;--amber:#f5b83d;--green:#3ddc97;--violet:#b48cff;--red:#ff6b70;
+--s-amber:#3b2f10;--t-amber:#ffd37a;--s-green:#11352a;--t-green:#7be8b5;--s-cyan:#0f353d;--t-cyan:#8fe3f2;--s-blue:#222a55;--t-blue:#b4c0ff;--s-violet:#2d2352;--t-violet:#d9c8ff;--s-red:#431b1e;--t-red:#ffa8ac;--s-grey:#34332f;--t-grey:#d0cec4}
+@media (prefers-color-scheme: light){:root{--bg:#ffffff;--page:#eef0f7;--line:#e6e8f2;--fg:#1b1f3b;--dim:#6b7090;--off:#dfe2f0;--cyan:#17a2c0;--blue:#4f6bff;--amber:#e89a0c;--green:#1fb36b;--violet:#7c3aed;--red:#e5484d;
+--s-amber:#fff3d6;--t-amber:#9a6200;--s-green:#def7ea;--t-green:#0e7a47;--s-cyan:#d8f3f8;--t-cyan:#0b6f84;--s-blue:#e9edff;--t-blue:#3a54e0;--s-violet:#eee7ff;--t-violet:#6d3fd6;--s-red:#ffe3e4;--t-red:#b3262b;--s-grey:#eceef7;--t-grey:#4b5075}}
+text{font-family:'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif}
+.m{font-family:ui-monospace, SFMono-Regular, Menlo, monospace}
+.fg{fill:var(--fg)}.dim{fill:var(--dim)}
+.ok{fill:var(--green)}.run{fill:var(--amber)}.fail{fill:var(--red)}.skip{fill:var(--dim)}
+.p-amber{fill:var(--s-amber)}.tt-amber{fill:var(--t-amber)}.p-green{fill:var(--s-green)}.tt-green{fill:var(--t-green)}
+.p-cyan{fill:var(--s-cyan)}.tt-cyan{fill:var(--t-cyan)}.p-blue{fill:var(--s-blue)}.tt-blue{fill:var(--t-blue)}
+.p-violet{fill:var(--s-violet)}.tt-violet{fill:var(--t-violet)}.p-red{fill:var(--s-red)}.tt-red{fill:var(--t-red)}
+.p-grey{fill:var(--s-grey)}.tt-grey{fill:var(--t-grey)}
+</style><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#7d93ff"/><stop offset=".6" stop-color="#f5b83d"/><stop offset="1" stop-color="#3ddc97"/></linearGradient></defs><path d="M 8 3 H 520 L 486 46 H 42 Z" fill="url(#g)" opacity=".14"/><path d="M 8 3 H 520 L 486 46 H 42 Z" fill="none" stroke="url(#g)" stroke-width="2" stroke-linejoin="round"/><text x="70" y="30" font-size="20" font-weight="700" text-anchor="end" class="fg">6</text><text x="76" y="30" font-size="11" class="dim">branches</text><text x="192" y="30" font-size="20" font-weight="700" text-anchor="end" class="fg">3</text><text x="198" y="30" font-size="11" class="dim">develop</text><rect x="166" y="38" width="80" height="3" rx="1.5" fill="var(--blue)"/><text x="313" y="30" font-size="20" font-weight="700" text-anchor="end" class="fg">5</text><text x="319" y="30" font-size="11" class="dim">staging</text><text x="424" y="30" font-size="20" font-weight="700" text-anchor="end" class="ok">✓</text><text x="430" y="30" font-size="11" class="dim">prod</text></svg></svg>
